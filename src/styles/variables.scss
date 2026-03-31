@@ -11,7 +11,7 @@
   --color-cyan: #e7fafe;
   --color-cyan-alt: #e7f9fd;
 
-  --color-accent: #ff6363;
+  --color-accent: #ff7426;
 
   --gradient: linear-gradient(180deg, rgb(var(--color-cyan-alt) 0) 0%, var(--color-cyan-alt) 100%);
 
@@ -31,4 +31,6 @@
   --container-padding-x: 16px;
 
   --transition-duration: 0.2s;
+
+  --layer-mobile-menu: 100;
 }
