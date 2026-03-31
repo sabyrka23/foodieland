@@ -1,10 +1,47 @@
 .header {
-  padding-block: 40px;
+  padding-block: fluid(40, 20);
   border-bottom: var(--border);
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 20px;
+  }
+
+  &__menu {
+    @include mobile {
+      position: fixed;
+      z-index: var(--layer-mobile-menu);
+      inset: 0;
+      background-color: var(--color-white);
+      transition-duration: var(--transition-duration);
+
+      &:not(.is-active) {
+        @include hide;
+      }
+
+      ul {
+        @include mobile {
+          overflow-y: auto;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          row-gap: 30px;
+          height: 100vh;
+          padding-block: 30px;
+        }
+      }
+    }
+  }
+
+  &__soc1als {
+    @include mobile {
+      margin-left: auto;
+    }
+  }
+
+  &__burger-button {
+    z-index: var(--layer-mobile-menu);
   }
 }
