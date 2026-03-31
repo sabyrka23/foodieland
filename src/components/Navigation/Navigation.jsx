@@ -3,10 +3,10 @@ import clsx from 'clsx'
 import { menuItems } from './navigation.data'
 
 export default (props) => {
-  const { url, className } = props
+  const { url, className, extraAttrs } = props
 
   return (
-    <nav className={clsx('menu', className)}>
+    <nav className={clsx('menu', className)} {...extraAttrs}>
       <ul className="menu__list">
         {menuItems.map(({ label, href }) => (
           <li className="menu__item" key={href}>
