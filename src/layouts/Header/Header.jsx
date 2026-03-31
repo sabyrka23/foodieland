@@ -20,7 +20,7 @@ export default (props) => {
         />
         <Socials className="header__soc1als" />
         <BurgerButton
-          className="header__burger-button"
+          className="header__burger-button visible-mobile"
           extraAttrs={{
             'data-js-mobile-menu-burger-button': '',
           }}
