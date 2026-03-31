@@ -1,7 +1,11 @@
 .soc1als {
   &__list {
     display: flex;
-    column-gap: 40px;
+    column-gap: fluid(40, 20);
     color: var(--color-black);
+  }
+
+  &__item {
+    display: flex;
   }
 }
