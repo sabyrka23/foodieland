@@ -22,7 +22,7 @@
   }
 
   &--4 {
-    @include mobile {
+    @include tablet-s {
       --gridColumns: 2;
     }
 
