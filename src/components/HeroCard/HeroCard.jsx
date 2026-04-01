@@ -59,7 +59,7 @@ export default (props) => {
         </div>
         <Image className="hero-card__badge" src={badgeImgSrc} />
       </div>
-      <Image src={bgImgSrc} />
+      <Image className='hero-card__image' src={bgImgSrc} />
     </article>
   )
 }
