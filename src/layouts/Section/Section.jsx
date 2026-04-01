@@ -3,7 +3,15 @@ import clsx from 'clsx'
 import Button from '../../components/Button'
 
 export default (props) => {
-  const { className, title, titleId, description, linkLabel, headerMode, children } = props
+  const {
+    className,
+    title,
+    titleId,
+    description,
+    linkLabel,
+    headerMode,
+    children,
+  } = props
 
   return (
     <section

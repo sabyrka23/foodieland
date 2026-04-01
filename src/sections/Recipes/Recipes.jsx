@@ -1,4 +1,3 @@
-import './Recipes.scss'
 import Section from '@/layouts/Section'
 import Grid from '@/components/Grid'
 import RecipeBanner from '@/components/RecipeBanner'

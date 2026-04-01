@@ -4,7 +4,8 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: url('@/assets/images/recipe-banner/recipe-banner-bg.svg') center / cover no-repeat;
+  background: url('@/assets/images/recipe-banner/recipe-banner-bg.svg') center /
+    cover no-repeat;
 
   @include mobile {
     padding-block: 80px;
@@ -29,4 +30,4 @@
   &__link {
     color: var(--color-white-600);
   }
-} 
+}
