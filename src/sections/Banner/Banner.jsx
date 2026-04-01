@@ -1,6 +1,6 @@
 import './Banner.scss'
 import Button from '@/components/Button'
-import bannerBg from '@/assets/images/banner/banner-bg.svg'
+import bannerBg from '@/assets/images/banner/banner-bg.png'
 
 export default () => {
   return (
