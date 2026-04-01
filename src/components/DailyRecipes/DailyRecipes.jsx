@@ -1,8 +1,21 @@
 import './DailyRecipes.scss'
-import clsx from 'clsx'
+import Section from '@/layouts/Section'
+import Grid from '@/components/Grid'
+import RecipeCardAlt from '@/components/RecipeCardAlt'
+import { dailyRecipes } from './daily-recipes.data'
 
-export default (props) => {
-  const { className } = props
-
-  return <div className={clsx('daily-recipes', className)}>DailyRecipes</div>
+export default () => {
+  return (
+    <Section
+      title="Try this delicious recipe to make your day"
+      titleId="daily-recipes"
+      description="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim "
+    >
+      <Grid columns={4}>
+        {dailyRecipes.map(({ id, ...recipe }) => (
+          <RecipeCardAlt key={id} {...recipe} />
+        ))}
+      </Grid>
+    </Section>
+  )
 }
