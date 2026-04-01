@@ -1,6 +1,5 @@
 import './HeroCard.scss'
 import clsx from 'clsx'
-import { Image } from 'minista'
 import Icon from '@/components/Icon'
 import Button from '@/components/Button'
 
@@ -21,7 +20,13 @@ export default (props) => {
       <div className="hero-card__body">
         <div className="hero-card__body-main">
           <div className="hero-card__category">
-            <Image src={category.imgSrc} width={24} height={24} />
+            <img
+              src={category.imgSrc}
+              alt=""
+              width={24}
+              height={24}
+              loading="lazy"
+            />
             <span>{category.label}</span>
           </div>
           <h2 className="hero-card__title h1">{title}</h2>
@@ -41,7 +46,13 @@ export default (props) => {
         </div>
         <div className="hero-card__body-extra">
           <div className="hero-card__author">
-            <Image src={author.imgSrc} width={50} height={50} />
+            <img
+              src={author.imgSrc}
+              alt=""
+              width={50}
+              height={50}
+              loading="lazy"
+            />
             <div className="hero-card__author-body">
               <p className="hero-card__author-name">{author.name}</p>
               <time
@@ -57,18 +68,22 @@ export default (props) => {
             <Icon name="play" hasFill />
           </Button>
         </div>
-        <Image
+        <img
           className="hero-card__badge"
           src={badgeImgSrc}
+          alt=""
           width={150}
           height={150}
+          loading="lazy"
         />
       </div>
-      <Image
+      <img
         className="hero-card__image"
         src={bgImgSrc}
+        alt=""
         width={660}
         height={640}
+        loading="lazy"
       />
     </article>
   )
