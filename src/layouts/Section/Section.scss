@@ -1,7 +1,7 @@
 .section {
   display: grid;
   row-gap: fluid(80, 40);
-  padding-block: 50px;
+  padding-block: var(--section-padding-y);
 
   &__header {
     display: flex;
@@ -14,5 +14,10 @@
       align-items: start;
       row-gap: 20px;
     }
+  }
+
+  &__link {
+    color: var(--color-black);
+    background-color: var(--color-cyan);
   }
 }
