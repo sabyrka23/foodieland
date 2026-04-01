@@ -1,7 +1,7 @@
 import './DailyRecipes.scss'
 import Section from '@/layouts/Section'
 import Grid from '@/components/Grid'
-import RecipeCardAlt from '@/components/RecipeCardAlt'
+import RecipeCard from '@/components/RecipeCard'
 import { dailyRecipes } from './daily-recipes.data'
 
 export default () => {
@@ -13,7 +13,7 @@ export default () => {
     >
       <Grid columns={4}>
         {dailyRecipes.map(({ id, ...recipe }) => (
-          <RecipeCardAlt key={id} {...recipe} />
+          <RecipeCard titleTag='h6' key={id} {...recipe} />
         ))}
       </Grid>
     </Section>
