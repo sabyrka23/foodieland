@@ -11,6 +11,7 @@ export default () => {
       title="Simple and tasty recipes"
       titleId="recipes"
       description="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim "
+      headerMode="column"
     >
       <Grid columns={3}>
         {recipes.map(({ type, id, ...rest }) =>
