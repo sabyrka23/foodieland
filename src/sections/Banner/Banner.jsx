@@ -21,7 +21,14 @@ export default () => {
             Learn More
           </Button>
         </div>
-        <img src={bannerBg} alt="" width="" height="" loading="lazy" />
+        <img
+          className="banner__image"
+          src={bannerBg}
+          alt=""
+          width="710"
+          height="597"
+          loading="lazy"
+        />
       </div>
     </section>
   )
