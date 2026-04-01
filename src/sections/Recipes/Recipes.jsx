@@ -1,8 +1,15 @@
 import './Recipes.scss'
-import clsx from 'clsx'
+import Section from '@/layouts/Section'
+import Grid from '@/components/Grid'
 
-export default (props) => {
-  const { className } = props
-
-  return <div className={clsx('recipes', className)}>Recipes</div>
+export default () => {
+  return (
+    <Section
+      title="Simple and tasty recipes"
+      titleId="recipes"
+      description="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim "
+    >
+      <Grid columns={3}></Grid>
+    </Section>
+  )
 }
