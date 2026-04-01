@@ -3,14 +3,6 @@ import authorImage from '@/assets/images/hero-card/author.png'
 import badgeImage from '@/assets/images/hero-card/badge.svg'
 import heroBgImage from '@/assets/images/hero-card/hero-card-bg.jpg'
 
-export const sliderConfig = {
-  spaceBetween: 120,
-  slidesPerView: 'auto',
-  centeredSlides: true,
-  initialSlide: 1,
-  effect: 'coverflow',
-}
-
 const category = {
   imgSrc: scrollImage,
   label: 'Hot Recipes',
