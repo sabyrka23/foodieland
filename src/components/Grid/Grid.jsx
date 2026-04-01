@@ -5,7 +5,7 @@ export default (props) => {
   const { children, columns = 1 } = props
 
   return (
-    <ul className={clsx(`grid grid--${columns}`)}>
+    <ul className={`grid grid--${columns}`}>
       {children.map((child, index) => (
         <li className="grid__item" key={index}>
           {child}
