@@ -8,4 +8,15 @@
   &__item {
     display: flex;
   }
+
+  &__link {
+    position: relative;
+
+    &::before {
+      @include abs-center;
+      @include square(44px);
+
+      content: '';
+    }
+  }
 }
