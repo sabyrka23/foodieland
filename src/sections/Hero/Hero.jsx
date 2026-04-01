@@ -1,4 +1,6 @@
 import './Hero.scss'
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
 import { heroCards, sliderConfig } from './hero.data'
 import HeroCard from '@/components/HeroCard'
 
