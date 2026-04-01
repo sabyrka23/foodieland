@@ -1,8 +1,19 @@
 import './RecipeCardAlt.scss'
-import clsx from 'clsx'
+import Tags from '@/components/Tags'
 
-export default (props) => {
-  const { className } = props
-
-  return <div className={clsx('recipe-card-alt', className)}>RecipeCardAlt</div>
+export default ({ imgSrc, title, tags }) => {
+  return (
+    <article className="recipe-card-alt">
+      <img
+        className="recipe-card-alt__image"
+        src={imgSrc}
+        alt=""
+        width="290"
+        height="200"
+        loading="lazy"
+      />
+      <h3 className="recipe-card-alt__title h6">{title}</h3>
+      <Tags className="recipe-card-alt__tags" tags={tags} />
+    </article>
+  )
 }
