@@ -1,9 +1,10 @@
 import Hero from '@/sections/Hero'
 import Categories from '@/sections/Categories'
 import Recipes from '@/sections/Recipes'
-import SubscribeForm from '@/sections/SubscribeForm'
 import Banner from '@/sections/Banner'
 import InstagramView from '@/sections/InstagramView'
+import DailyRecipes from '@/components/DailyRecipes'
+import SubscribeForm from '@/sections/SubscribeForm'
 
 export const metadata = {
   title: 'Home',
@@ -17,6 +18,7 @@ export default () => {
       <Recipes />
       <Banner />
       <InstagramView />
+      <DailyRecipes />
       <SubscribeForm />
     </>
   )
