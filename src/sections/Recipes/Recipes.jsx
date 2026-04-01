@@ -1,9 +1,9 @@
 import './Recipes.scss'
 import Section from '@/layouts/Section'
 import Grid from '@/components/Grid'
-import { recipes } from './recipes.data'
 import RecipeBanner from '@/components/RecipeBanner'
 import RecipeCard from '@/components/RecipeCard'
+import { recipes } from './recipes.data'
 
 export default () => {
   return (
