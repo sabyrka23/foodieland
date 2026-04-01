@@ -1,5 +1,4 @@
 import './Grid.scss'
-import clsx from 'clsx'
 
 export default (props) => {
   const { children, columns = 1 } = props
