@@ -1,5 +1,6 @@
 import Hero from '@/sections/Hero'
 import Categories from '@/sections/Categories'
+import Recipes from '@/sections/Recipes'
 import SubscribeForm from '@/sections/SubscribeForm'
 import Banner from '@/sections/Banner'
 
@@ -12,6 +13,7 @@ export default () => {
     <>
       <Hero />
       <Categories />
+      <Recipes />
       <SubscribeForm />
       <Banner />
     </>
