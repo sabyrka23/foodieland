@@ -1,3 +1,53 @@
 .subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: var(--section-padding-y);
+  background: url('@/assets/images/subscribe-form/subscribe-form-bg.svg') center / cover no-repeat;
+  border-radius: var(--border-radius-m);
 
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 620px;
+    padding-block: fluid(80, 40);
+    text-align: center;
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__field {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-xs);
+    min-width: 480px;
+  }
+
+  &__input {
+    font-weight: 500;
+    font-size: 14px;
+    padding-inline: 22px;
+    border: none;
+
+    &::placeholder {
+      color: var(--color-black-400);
+    }
+  }
+
+  &__button {
+    min-width: 160px;
+  }
 } 
