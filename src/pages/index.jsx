@@ -14,8 +14,8 @@ export default () => {
       <Hero />
       <Categories />
       <Recipes />
-      <SubscribeForm />
       <Banner />
+      <SubscribeForm />
     </>
   )
 }
