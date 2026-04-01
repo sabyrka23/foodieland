@@ -12,6 +12,16 @@
     @include mobile-s {
       display: contents;
     }
+
+    &--column {
+      flex-direction: column;
+      row-gap: 24px;
+
+      & > div {
+        max-width: 706px;
+        text-align: center;
+      }
+    }
   }
 
   &__link {
