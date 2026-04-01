@@ -21,7 +21,7 @@ export default (props) => {
       <div className="hero-card__body">
         <div className="hero-card__body-main">
           <div className="hero-card__category">
-            <Image src={category.imgSrc} />
+            <Image src={category.imgSrc} width={24} height={24} />
             <span>{category.label}</span>
           </div>
           <h2 className="hero-card__title h1">{title}</h2>
@@ -41,7 +41,7 @@ export default (props) => {
         </div>
         <div className="hero-card__body-extra">
           <div className="hero-card__author">
-            <Image src={author.imgSrc} />
+            <Image src={author.imgSrc} width={50} height={50} />
             <div className="hero-card__author-body">
               <p className="hero-card__author-name">{author.name}</p>
               <time
@@ -57,9 +57,19 @@ export default (props) => {
             <Icon name="play" hasFill />
           </Button>
         </div>
-        <Image className="hero-card__badge" src={badgeImgSrc} />
+        <Image
+          className="hero-card__badge"
+          src={badgeImgSrc}
+          width={150}
+          height={150}
+        />
       </div>
-      <Image className='hero-card__image' src={bgImgSrc} />
+      <Image
+        className="hero-card__image"
+        src={bgImgSrc}
+        width={660}
+        height={640}
+      />
     </article>
   )
 }
