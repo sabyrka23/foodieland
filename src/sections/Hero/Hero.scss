@@ -6,14 +6,4 @@
   @include laptop-s {
     padding-inline: var(--container-padding-x);
   }
-
-  &__slider-item {
-    max-width: var(--container-width);
-    border-radius: var(--border-radius-m);
-    overflow: hidden;
-
-    @include tablet-s {
-      border-radius: var(--border-radius);
-    }
-  }
 }
