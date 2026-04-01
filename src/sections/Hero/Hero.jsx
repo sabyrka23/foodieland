@@ -1,5 +1,6 @@
 import './Hero.scss'
-import { sliderConfig } from './hero.data'
+import { heroCards, sliderConfig } from './hero.data'
+import HeroCard from '@/components/HeroCard'
 
 export default () => {
   return (
@@ -12,15 +13,11 @@ export default () => {
         data-js-slider={JSON.stringify(sliderConfig)}
       >
         <ul className="hero__slider-list swiper-wrapper">
-          <li className="hero__slider-item swiper-slide">
-            <div className="hero-card">Slide 1</div>
-          </li>
-          <li className="hero__slider-item swiper-slide">
-            <div className="hero-card">Slide 2</div>
-          </li>
-          <li className="hero__slider-item swiper-slide">
-            <div className="hero-card">Slide 3</div>
-          </li>
+          {heroCards.map(({ id, ...card }) => (
+            <li className="hero__slider-item swiper-slide" key={id}>
+              <HeroCard {...card} />
+            </li>
+          ))}
         </ul>
       </div>
     </section>
