@@ -4,6 +4,18 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 44px;
+
+    @include mobile {
+      flex-direction: column-reverse;
+      row-gap: 40px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   &__title {
@@ -14,11 +26,21 @@
 
   &__description {
     &:not(:last-child) {
-      margin-bottom: 72px;
+      margin-bottom: fluid(72, 32);
     }
   }
 
   &__button {
     min-width: 180px;
+  }
+
+  &__image {
+    @include tablet {
+      width: 60%;
+    }
+
+    @include mobile {
+      width: 80%;
+    }
   }
 } 
