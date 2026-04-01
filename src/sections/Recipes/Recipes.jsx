@@ -15,7 +15,7 @@ export default () => {
       <Grid columns={3}>
         {recipes.map(({ type, id, ...rest }) =>
           type === 'recipe' ? (
-            <RecipeCard key={id} {...rest} />
+            <RecipeCard mode="alt" titleTag="h4" key={id} {...rest} />
           ) : (
             <RecipeBanner key={id} />
           )
