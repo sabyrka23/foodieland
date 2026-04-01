@@ -2,7 +2,15 @@ import './Grid.scss'
 import clsx from 'clsx'
 
 export default (props) => {
-  const { className } = props
+  const { children, columns = 1 } = props
 
-  return <div className={clsx('grid', className)}>Grid</div>
+  return (
+    <ul className={clsx(`grid grid--${columns}`)}>
+      {children.map((child, index) => (
+        <li className="grid__item" key={index}>
+          {child}
+        </li>
+      ))}
+    </ul>
+  )
 }
