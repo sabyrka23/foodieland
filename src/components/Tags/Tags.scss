@@ -1,17 +1,14 @@
 .tags {
   &__list {
     display: flex;
-    column-gap: 16px;
+    column-gap: 24px;
   }
 
   &__item {
     display: flex;
     align-items: center;
     column-gap: 10px;
-    padding: 8px 16px;
     color: var(--color-black);
-    background-color: var(--color-black-50);
-    border-radius: var(--border-radius);
   }
 
   &__label {
