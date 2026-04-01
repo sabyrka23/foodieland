@@ -9,15 +9,17 @@
     align-items: center;
     column-gap: 16px;
 
-    @include mobile {
-      flex-direction: column;
-      align-items: start;
-      row-gap: 20px;
+    @include mobile-s {
+      display: contents;
     }
   }
 
   &__link {
     color: var(--color-black);
     background-color: var(--color-cyan);
+
+    @include mobile-s {
+      order: 1;
+    }
   }
 }
