@@ -1,4 +1,37 @@
 .footer {
-  padding-block: 20px;
-  background-color: var(--color-gray);
+  padding-top: var(--section-padding-y);
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: fluid(48, 24);
+    border-bottom: var(--border);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__menu {
+    li:first-child {
+      display: none;
+    }
+  }
+
+  &__extra {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-block: fluid(48, 24);
+  }
+
+  &__copyright {
+    @include abs-center;
+
+    font-weight: 500;
+    font-size: 18px;
+  }
 }
