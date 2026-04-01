@@ -2,6 +2,7 @@ import './HeroCard.scss'
 import clsx from 'clsx'
 import Icon from '@/components/Icon'
 import Button from '@/components/Button'
+import Tags from '@/components/Tags'
 
 export default (props) => {
   const {
@@ -33,16 +34,7 @@ export default (props) => {
           <div className="hero-card__description">
             <p>{description}</p>
           </div>
-          <div className="hero-card__tags">
-            <ul className="hero-card__tags-list">
-              {tags.map(({ icon, label }) => (
-                <li className="hero-card__tags-item" key={label}>
-                  <Icon name={icon} hasFill />
-                  <span className="hero-card__tags-label">{label}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <Tags className="hero-card__tags" tags={tags} />
         </div>
         <div className="hero-card__body-extra">
           <div className="hero-card__author">
