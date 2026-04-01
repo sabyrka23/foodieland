@@ -7,16 +7,18 @@ export default (props) => {
 
   return (
     <article className={clsx('recipe-card', className)}>
-      <img
-        className="recipe-card__image"
-        src={imgSrc}
-        alt=""
-        width="368"
-        height="250"
-        loading="lazy"
-      />
-      <h3 className="recipe-card__title h4">{title}</h3>
-      <Tags className="recipe-card__tags" tags={tags} />
+      <a className="recipe-card__inner" href="/">
+        <img
+          className="recipe-card__image"
+          src={imgSrc}
+          alt=""
+          width="368"
+          height="250"
+          loading="lazy"
+        />
+        <h3 className="recipe-card__title h4">{title}</h3>
+        <Tags className="recipe-card__tags" tags={tags} />
+      </a>
     </article>
   )
 }
