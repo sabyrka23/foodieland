@@ -15,7 +15,7 @@ export default (props) => {
         height="250"
         loading="lazy"
       />
-      <h3 className="recipe-card__title">{title}</h3>
+      <h3 className="recipe-card__title h4">{title}</h3>
       <Tags className="recipe-card__tags" tags={tags} />
     </article>
   )
