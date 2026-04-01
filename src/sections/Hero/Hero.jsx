@@ -8,7 +8,7 @@ export default () => {
       <h1 className="visually-hidden" id="hero-title">
         Special Offers
       </h1>
-      <Slider class='hero__slider' items={heroCards} />
+      <Slider class="hero__slider" items={heroCards} />
     </section>
   )
 }

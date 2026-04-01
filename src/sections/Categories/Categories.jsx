@@ -1,4 +1,3 @@
-import './Categories.scss'
 import Section from '@/layouts/Section'
 import CategoryCard from '@/components/CategoryCard'
 import Grid from '@/components/Grid'

@@ -11,16 +11,16 @@
     position: relative;
     display: grid;
     justify-content: space-between;
-    background-color: var(--color-cyan);
     padding: fluid(50, 20);
+    background-color: var(--color-cyan);
 
     @include tablet-above {
       min-height: 640px;
     }
 
     @include tablet {
-      width: 100%;
       row-gap: fluid(40, 30);
+      width: 100%;
     }
 
     &-extra {
@@ -42,8 +42,8 @@
     align-items: center;
     column-gap: 14px;
     padding: 10px 20px;
-    font-weight: 600;
     font-size: 14px;
+    font-weight: 600;
     color: var(--color-black);
     background-color: var(--color-white);
     border-radius: var(--border-radius);
@@ -89,8 +89,8 @@
     }
 
     &-label {
-      font-weight: 500;
       font-size: 14px;
+      font-weight: 500;
       letter-spacing: -0.02em;
       color: var(--color-black-600);
     }
@@ -110,21 +110,21 @@
     }
 
     &-name {
-      color: var(--color-black);
       font-weight: 700;
+      color: var(--color-black);
     }
 
     &-date {
-      font-weight: 500;
       font-size: 14px;
+      font-weight: 500;
       color: var(--color-black-600);
     }
   }
 
   &__button {
     @include mobile-s {
-      width: 100%;
       justify-content: center;
+      width: 100%;
     }
   }
 
@@ -134,15 +134,15 @@
     left: calc(100% - 50px);
 
     @include tablet {
-      width: 120px;
       top: -50px;
       left: calc(100% - 150px);
+      width: 120px;
     }
 
     @include mobile-s {
-      width: 80px;
       top: -30px;
       left: calc(100% - 100px);
+      width: 80px;
     }
   }
 
@@ -157,4 +157,4 @@
       height: 30vh;
     }
   }
-} 
+}

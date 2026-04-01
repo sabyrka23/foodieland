@@ -1,11 +1,11 @@
 .slider {
   &__item {
+    overflow: hidden;
     max-width: var(--container-width);
     border-radius: var(--border-radius-m);
-    overflow: hidden;
 
     @include tablet-s {
       border-radius: var(--border-radius);
     }
   }
-} 
+}

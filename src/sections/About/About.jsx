@@ -1,4 +1,3 @@
-import './About.scss'
 import Section from '@/layouts/Section'
 
 export default () => {
