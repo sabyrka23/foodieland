@@ -1,5 +1,7 @@
 $laptop: 1440px;
-$tablet: 1023px;
+$laptop-s: 1320px;
+$tablet: 1170px;
+$tablet-s: 1023px;
 $mobile: 767px;
 $mobile-s: 480px;
 
@@ -15,6 +17,18 @@ $mobile-s: 480px;
   }
 }
 
+@mixin laptop-s-above {
+  @media (width > $laptop-s) {
+    @content;
+  }
+}
+
+@mixin laptop-s {
+  @media (width <= $laptop-s) {
+    @content;
+  }
+}
+
 @mixin tablet-above {
   @media (width > $tablet) {
     @content;
@@ -23,6 +37,18 @@ $mobile-s: 480px;
 
 @mixin tablet {
   @media (width <= $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-s-above {
+  @media (width > $tablet-s) {
+    @content;
+  }
+}
+
+@mixin tablet-s {
+  @media (width <= $tablet-s) {
     @content;
   }
 }
