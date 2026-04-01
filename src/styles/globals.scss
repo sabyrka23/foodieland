@@ -5,7 +5,6 @@ html {
 }
 
 body {
-
   display: flex;
   flex-direction: column;
   font-family: var(--font-family), sans-serif;
@@ -15,11 +14,17 @@ body {
   background-color: var(--color-white);
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  color: var(--color-black);
+}
+
 h1,
 .h1 {
   @include fluid-text(64, 28);
 
   font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
 }
 
 h2,
