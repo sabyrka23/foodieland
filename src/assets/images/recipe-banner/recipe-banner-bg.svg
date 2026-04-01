@@ -8,15 +8,15 @@
 </g>
 <defs>
 <linearGradient id="paint0_linear_101_980" x1="200" y1="0" x2="200" y2="434" gradientUnits="userSpaceOnUse">
-<stop stop-color="#357355"/>
+<stop stop-color="#357355" offset=""/>
 <stop offset="1" stop-color="#1D483B"/>
 </linearGradient>
 <linearGradient id="paint1_linear_101_980" x1="200" y1="0" x2="200" y2="434" gradientUnits="userSpaceOnUse">
-<stop stop-color="#357355"/>
+<stop stop-color="#357355" offset=""/>
 <stop offset="1" stop-color="#1D483B"/>
 </linearGradient>
 <radialGradient id="paint2_radial_101_980" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(200 217) rotate(90) scale(215.5)">
-<stop stop-color="#3A795B"/>
+<stop stop-color="#3A795B" offset=""/>
 <stop offset="1" stop-color="#3A795B" stop-opacity="0"/>
 </radialGradient>
 </defs>
