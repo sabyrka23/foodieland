@@ -3,20 +3,18 @@ import clsx from 'clsx'
 import Tags from '@/components/Tags'
 
 export default (props) => {
-  const { className, imgSrc, title, tags } = props
+  const { mode, imgSrc, title, titleTag, tags } = props
 
   return (
-    <article className={clsx('recipe-card', className)}>
-      <a className="recipe-card__inner" href="/">
+    <article className={`recipe-card recipe-card--${mode}`}>
+      <a className={clsx('recipe-card__inner')} href="/">
         <img
           className="recipe-card__image"
           src={imgSrc}
           alt=""
-          width="368"
-          height="250"
           loading="lazy"
         />
-        <h3 className="recipe-card__title h4">{title}</h3>
+        <h3 className={clsx('recipe-card__title', titleTag)}>{title}</h3>
         <Tags className="recipe-card__tags" tags={tags} />
       </a>
     </article>
