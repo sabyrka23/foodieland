@@ -1,3 +1,113 @@
 .hero-card {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-m);
+  overflow: hidden;
 
+  &__body {
+    position: relative;
+    display: grid;
+    justify-content: space-between;
+    background-color: var(--color-cyan);
+    min-height: 640px;
+    padding: 50px;
+
+    &-extra {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+    }
+  }
+
+  &__category {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 14px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__title {
+    max-width: 520px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    max-width: 520px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__tags {
+    &-list {
+      display: flex;
+      column-gap: 16px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      padding: 8px 16px;
+      color: var(--color-black);
+      background-color: var(--color-black-50);
+      border-radius: var(--border-radius);
+    }
+
+    &-label {
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: -0.02em;
+      color: var(--color-black-600);
+    }
+  }
+
+  &__author {
+    display: flex;
+    column-gap: 16px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 8px;
+    }
+
+    &-name {
+      color: var(--color-black);
+      font-weight: 700;
+    }
+
+    &-date {
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--color-black-600);
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: 50px;
+    left: calc(100% - 50px);
+  }
 } 
