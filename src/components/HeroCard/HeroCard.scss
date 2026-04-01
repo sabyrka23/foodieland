@@ -3,19 +3,37 @@
   justify-content: center;
   align-items: center;
 
+  @include tablet {
+    flex-direction: column-reverse;
+  }
+
   &__body {
     position: relative;
     display: grid;
     justify-content: space-between;
     background-color: var(--color-cyan);
-    min-height: 640px;
-    padding: 50px;
+    padding: fluid(50, 20);
+
+    @include tablet-above {
+      min-height: 640px;
+    }
+
+    @include tablet {
+      width: 100%;
+      row-gap: fluid(40, 30);
+    }
 
     &-extra {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-top: auto;
+
+      @include mobile-s {
+        flex-direction: column;
+        align-items: start;
+        row-gap: 20px;
+      }
     }
   }
 
@@ -32,15 +50,17 @@
     box-shadow: var(--shadow);
 
     &:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: fluid(32, 20);
     }
   }
 
   &__title {
-    max-width: 520px;
+    @include tablet-above {
+      max-width: 520px;
+    }
 
     &:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: fluid(24, 14);
     }
   }
 
@@ -101,9 +121,40 @@
     }
   }
 
+  &__button {
+    @include mobile-s {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
   &__badge {
     position: absolute;
     top: 50px;
     left: calc(100% - 50px);
+
+    @include tablet {
+      width: 120px;
+      top: -50px;
+      left: calc(100% - 150px);
+    }
+
+    @include mobile-s {
+      width: 80px;
+      top: -30px;
+      left: calc(100% - 100px);
+    }
+  }
+
+  &__image {
+    @include tablet {
+      width: 100%;
+      height: 40vh;
+      object-fit: cover;
+    }
+
+    @include mobile {
+      height: 30vh;
+    }
   }
 } 
