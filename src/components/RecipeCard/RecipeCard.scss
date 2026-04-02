@@ -19,16 +19,16 @@
   }
 
   &__image-wrapper {
-    @include tablet {
-      width: 100%;
-    }
-
     &:not(:last-child) {
       margin-bottom: 16px;
     }
 
     img {
       border-radius: var(--border-radius-xxs);
+
+      @include tablet {
+        width: 100%;
+      }
     }
   }
 
