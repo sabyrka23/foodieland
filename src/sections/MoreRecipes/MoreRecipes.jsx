@@ -1,4 +1,3 @@
-import './MoreRecipes.scss'
 import Grid from '@/components/Grid'
 import RecipeCard from '@/components/RecipeCard'
 import Section from '@/layouts/Section'
