@@ -5,6 +5,11 @@
       background-image: var(--gradient);
       border-radius: var(--border-radius);
     }
+
+    button {
+      top: 36px;
+      right: 36px;
+    }
   }
 
   &__inner {
