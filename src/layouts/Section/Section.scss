@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 160px;
+    column-gap: fluid(160, 16);
 
     @include mobile-s {
       display: contents;
