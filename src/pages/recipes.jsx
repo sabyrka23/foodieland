@@ -9,7 +9,7 @@ export default () => {
   return (
     <>
       <SubscribeForm />
-      <MoreRecipes />
+      <MoreRecipes title="You may like these recipe too" />
     </>
   )
 }
