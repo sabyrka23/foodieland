@@ -1,4 +1,3 @@
-import './DailyRecipes.scss'
 import Section from '@/layouts/Section'
 import Grid from '@/components/Grid'
 import RecipeCard from '@/components/RecipeCard'
@@ -13,7 +12,7 @@ export default () => {
     >
       <Grid columns={4}>
         {dailyRecipes.map(({ id, ...recipe }) => (
-          <RecipeCard titleTag='h6' key={id} {...recipe} />
+          <RecipeCard titleTag="h6" key={id} {...recipe} />
         ))}
       </Grid>
     </Section>
