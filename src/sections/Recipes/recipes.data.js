@@ -1,4 +1,6 @@
 import burgerImage from '@/assets/images/recipes/burger.jpg'
+import likeIcon from '@/assets/icons/like/like.svg'
+import unlikeIcon from '@/assets/icons/like/unlike.svg'
 
 export const recipes = [
   {
@@ -16,6 +18,7 @@ export const recipes = [
         label: 'Snack',
       },
     ],
+    isLiked: likeIcon,
   },
   {
     id: 2,
@@ -32,6 +35,7 @@ export const recipes = [
         label: 'Snack',
       },
     ],
+    isLiked: unlikeIcon,
   },
   {
     id: 3,
@@ -48,6 +52,7 @@ export const recipes = [
         label: 'Snack',
       },
     ],
+    isLiked: likeIcon,
   },
   {
     id: 4,
@@ -64,6 +69,7 @@ export const recipes = [
         label: 'Snack',
       },
     ],
+    isLiked: unlikeIcon,
   },
   {
     id: 5,
@@ -80,6 +86,7 @@ export const recipes = [
         label: 'Snack',
       },
     ],
+    isLiked: likeIcon,
   },
   {
     id: 6,
@@ -100,6 +107,7 @@ export const recipes = [
         label: 'Snack',
       },
     ],
+    isLiked: likeIcon,
   },
   {
     id: 8,
@@ -116,6 +124,7 @@ export const recipes = [
         label: 'Snack',
       },
     ],
+    isLiked: unlikeIcon,
   },
   {
     id: 9,
@@ -132,5 +141,6 @@ export const recipes = [
         label: 'Snack',
       },
     ],
+    isLiked: likeIcon,
   },
 ]
