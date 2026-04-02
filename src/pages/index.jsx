@@ -3,7 +3,7 @@ import Categories from '@/sections/Categories'
 import Recipes from '@/sections/Recipes'
 import Banner from '@/sections/Banner'
 import InstagramView from '@/sections/InstagramView'
-import DailyRecipes from '@/components/DailyRecipes'
+import DailyRecipes from '@/sections/DailyRecipes'
 import SubscribeForm from '@/sections/SubscribeForm'
 
 export const metadata = {
