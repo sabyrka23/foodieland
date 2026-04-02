@@ -4,13 +4,11 @@ import RecipeCard from '@/components/RecipeCard'
 import Section from '@/layouts/Section'
 import { moreRecipes } from './more-recipes.data'
 
-export default () => {
+export default (props) => {
+  const { title } = props
+
   return (
-    <Section
-      title="You may like these recipe too"
-      titleId="more-recipes"
-      headerMode="center"
-    >
+    <Section title={title} titleId="more-recipes" headerMode="center">
       <Grid columns={4}>
         {moreRecipes.map(({ id, ...recipe }) => (
           <RecipeCard titleTag="h6" key={id} {...recipe} />
